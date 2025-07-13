@@ -1,0 +1,283 @@
+/*CSS RESET*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS variables */
+:root{
+    --navbar-height: 0px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+    
+    
+#navbar::before{
+    top: 0px;
+    left: 0px;
+    content: "";
+    color: black;
+    background-color: rgb(31 34 113 / 79%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    
+
+}
+/* Navigation bar : logo and image */
+#logo{
+    margin: 25px 24px;
+}
+#logo img{
+    height: 78px;
+    margin: 3px 5px;
+}
+
+/* Navigation bar : list styling */
+
+
+#navbar ul{
+    display: flex;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+}
+
+#navbar ul li{
+    /* color: white; */
+    /* background-color: black; */
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 34px;
+    text-decoration: none; /* underline chali jayegi */
+}
+#navbar ul li a:hover{
+    color: #000000d4;
+    background-color: rgb(250, 250, 250);
+
+
+
+
+
+
+
+
+
+
+    
+}
+/* HOME section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: var(--navbar-height);
+}
+#home::before{
+    
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.59;
+    background: url("../bg.png") no-repeat center center;
+    top: 0px;
+    left: 0px;
+    top: var(--navbar-height);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+
+
+
+
+
+/* Services Section */
+
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+/* #services h1{
+    margin: 34px;
+    justify-content: center;
+    align-items: center; */
+
+/* } */
+#services .box{
+    border: 2px solid brown;
+    margin: 3px;
+    padding: 4px;
+    border-radius: 21px;
+    background-color: #c77474;
+
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: "Beth Ellen", cursive;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* client section */
+#client-section {
+    height: 200px;
+    position: relative;
+}
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../bg.png') no-repeat center center;
+    background-size: cover; 
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#clients{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 45px;
+}
+#clients img{
+    height: 55px;
+}
+.clientsitem {
+    padding: 34px;
+}
+
+
+
+
+
+/* contact section  */
+#contact{
+    position: relative;
+    font-family: "Beth Ellen", cursive;
+
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../contact-us.png') no-repeat center top;
+}
+#contact-box{
+    display: flex;
+    padding-bottom: 34px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Beth Ellen", cursive;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+
+}
+
+
+
+
+/* footer */
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+
+
+/* utility class */
+.h-primary-center{
+    font-size: 1.9rem;
+    padding: 5px;
+    text-align: center;
+    font-family: "Beth Ellen", cursive;
+}
+.h-secondary-center{
+    font-size: 1.5rem;
+    padding: 17px;
+    font-family: "Beth Ellen", cursive;
+    text-align: center;
+}
+#home p{
+    color: rgb(10 10 10);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Beth Ellen", cursive;
+    
+}
+#home h1{
+    color: rgb(0 0 0);
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Beth Ellen", cursive;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #e95151;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: azure;
+    color: black;
+}
+.center{
+    text-align: center;
+}
