@@ -27,9 +27,6 @@ Tummyfy/
 - ✅ Clean fonts, modern color scheme
 - ✅ Contact form UI
 
-## 📸 Screenshots
-_(Add screenshots here if needed)_
-
 ## 🛠️ Tech Stack
 - HTML5
 - CSS3 (Media Queries)
